@@ -152,11 +152,11 @@ async def on_message(message):
             msg = await client.send_message(message.channel,eval(exe))
 
     #Mutes a player by deleting their messages
-    elif message.content.startswith('!nigger'):
+    elif message.content.startswith('!mute'):
         if checkid not in listVIP:
             await client.send_message(message.channel,"BOT: You do not have access to this command")
         else:
-            muteid = message.content[len('!nigger'):].strip()
+            muteid = message.content[len('!mute'):].strip()
             for member in message.server.members:
                 if member.id == muteid or member.mention == muteid:
                     namemen = member.mention
@@ -196,17 +196,17 @@ async def on_message(message):
 
 
     #Unmutes a player by removing them from the mute list
-    elif message.content.startswith('!freenigger'):
+    elif message.content.startswith('!unmute'):
         if checkid not in listVIP:
             await client.send_message(message.channel, "BOT: You do not have access to this command")
         else:
-            unmuteid = message.content[len('!freenigger'):].strip()
+            unmuteid = message.content[len('!unmute'):].strip()
             for member in message.server.members:
                 if member.id == unmuteid or member.mention == unmuteid:
                     tid = member.id
                     namemen = member.mention
                     if tid not in mutedList:
-                        await client.send_message(message.channel, "BOT: This user is not a nigger already")
+                        await client.send_message(message.channel, "BOT: This user is not muted already")
                     else:
                         mutedList.remove(tid)
                         await client.send_message(message.channel, "BOT: {} has been freed".format(namemen))
@@ -255,7 +255,7 @@ async def on_message(message):
             await client.delete_message(message)
             msg = await client.send_message(message.channel, "```lua\n{}```".format(nt))
         
-    elif message.content.startswith('!penis'):
+    elif message.content.startswith('!smartspam'):
         if checkid in listVIP:
             await client.delete_message(message)
             get_tagged = []
