@@ -36,7 +36,7 @@ WARNING: Discord has made Self-Bots and User-Bots against the rules :(
 
 ~~4. Add admin functionality~~
 
-  5. Update so that the functions that require looping, work with Python 3.7, help would be apperciated
+5. Update so that the functions that require looping, work with Python 3.7, help would be apperciated
 
 
 # Contribute 
