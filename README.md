@@ -31,8 +31,11 @@ WARNING: Discord has made Self-Bots and User-Bots against the rules :(
 
 # Todo 
 ~~2. Find a way to get a userID from an identifier~~ 
+
 ~~3. Add a gambling system~~
+
 ~~4. Add admin functionality~~
+
   5. Update so that the functions that require looping, work with Python 3.7, help would be apperciated
 
 
